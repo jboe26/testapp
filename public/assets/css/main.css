@@ -1,0 +1,82 @@
+#header {
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  
+  .headline {
+    /* cursor: pointer; */
+    clear: both;
+  }
+  
+  .navbar-brand {
+    font-size: 48px;
+  }
+  
+  .jumbotron {
+    margin-top: 50px;
+  }
+  
+  .story-div {
+    border: solid 2px #343a40;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .summary {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 6px;
+  }
+  
+  .date-line {
+    margin-bottom: 10px;
+  }
+  .story-date {
+    display:  inline;
+   }
+  
+  .story-link {
+    margin-left: 20px;
+  }
+  
+  .story-id{
+    margin-bottom: 0px;
+  }
+  
+  .comment-btn {
+    margin-top: 10px
+  }
+  
+  #re-scrape {
+    margin-right: 25px;
+    width: 200px;
+  
+  }
+  
+  .comment-del-btn {
+    margin: 0px 10px 0px 10px;
+    width: 60px; 
+  }
+  
+  .story-comment {
+    /* line-height: 1.5em; */
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .add-comment-btn {
+    margin: -95px 10px 0px 10px;
+    width: 60px; 
+    /* display: block; */
+    margin-right: 10px;
+  }
+  
+  .add-comment-input {
+    width: 90%;
+    height: 80px;
+    overflow: scroll;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+  }

@@ -1,0 +1,55 @@
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">On the Wire - The Los Angeles Times</a>
+      </div>
+      {{!-- <div id="header"> --}}
+        <ul class="nav navbar-nav ml-auto">
+          <li><button id="re-scrape" type="button" class="btn btn-success">Get New Stories</button></li>
+        </ul>
+      {{!-- </div> --}}
+    </nav>
+    <div id="wrapper">
+      <h1>News Scraper</h1>
+      <p>{{ greeting }}</p>
+      {{!-- <h2><i>LA Times Stories</i></h2> --}}
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            {{!-- <h1 >News Stories</h1> --}}
+            <div class="table-grid">
+              {{#each stories}}
+                {{> stories/story-item}}
+              {{/each}}
+            </div>
+          </div>
+        </div>
+        {{!-- <div class="col-4">
+          <div class="jumbotron">
+            <h1 >comments will go here</h1>
+          </div>
+        </div> --}}
+      </div>
+    </div>
+
+    <div id="empty-comment-text-box-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">On the Wire - The Los Angeles Times</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>You cannot add a blank comment.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
